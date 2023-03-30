@@ -38,7 +38,7 @@ fn check_position(pos: UVec3, spawns: &[u64]) -> usize {
 }
 
 fn main() {
-    let schem = rustmatica::Litematic::read_file("/home/james/.minecraft/schematics/slime spawning areas.litematic").unwrap();
+    let schem = rustmatica::Litematic::read_file("slime spawning areas.litematic").unwrap();
     let reg = &schem.regions[0];
     
     // which blocks to count, 64 block positions stored per u64 in each bit
